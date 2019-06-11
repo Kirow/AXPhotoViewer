@@ -631,7 +631,7 @@ import FLAnimatedImage_tvOS
     }
     
     // MARK: - Default bar button actions
-    @objc public func shareAction(_ barButtonItem: UIBarButtonItem) {
+    @objc open func shareAction(_ barButtonItem: UIBarButtonItem) {
         guard let photo = self.dataSource.photo(at: self.currentPhotoIndex) else { return }
         
         if self.handleActionButtonTapped(photo: photo) {
@@ -647,7 +647,13 @@ import FLAnimatedImage_tvOS
         
         guard let uAnyRepresentation = anyRepresentation else { return }
         
-        let activityViewController = UIActivityViewController(activityItems: [uAnyRepresentation], applicationActivities: nil)
+        let activityViewController = UIActivityViewController(activityItems: [uAnyRepresentation],
+															  applicationActivities: nil)
+
+		if UIDevice.current.userInterfaceIdiom != .phone {
+			activityViewController.popoverPresentationController?.barButtonItem = barButtonItem
+		}
+
         activityViewController.completionWithItemsHandler = { [weak self] (activityType, completed, returnedItems, activityError) in
             guard let `self` = self else { return }
             
