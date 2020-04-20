@@ -85,6 +85,7 @@ class AFNetworkingIntegration: NSObject, AXNetworkIntegrationProtocol {
         
         guard let dataTask = AXHTTPSessionManager.shared.get(url.absoluteString,
                                                              parameters: nil,
+                                                             headers: nil,
                                                              progress: progress,
                                                              success: success,
                                                              failure: failure) else { return }
