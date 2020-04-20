@@ -33,10 +33,12 @@ class NukeIntegration: NSObject, AXNetworkIntegrationProtocol {
             }
         }
         
-        let completion: ImageTask.Completion = { [weak self] (response, error) in
+        let completion: ImageTask.Completion = { [weak self] (result) in
             guard let `self` = self else { return }
             
             self.retrieveImageTasks.removeObject(forKey: photo)
+
+            let response = try? result.get()
             
             if let imageData = response?.image.animatedImageData {
                 photo.imageData = imageData
