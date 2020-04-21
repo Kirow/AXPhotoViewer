@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "AXPhotoViewer"
-  s.version         = "1.7.1-discogs.1"
+  s.version         = "1.7.1-discogs.2"
   s.license         = { :type  => 'MIT', :file => 'LICENSE.md' }
   s.summary         = "An iOS/tvOS photo gallery viewer, useful for viewing a large number of photos."
   s.homepage        = "https://github.com/alexhillc/AXPhotoViewer"
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
                        'Source/Extensions/*.{swift,h,m}',
                        'Source/Utilities/*.{swift,h,m}',
                        'Source/Integrations/SimpleNetworkIntegration.swift'
-    cs.frameworks    = 'MobileCoreServices', 'ImageIO', 'UIKit', 'QuartzCore'
+    cs.frameworks    = 'CoreServices', 'ImageIO', 'UIKit', 'QuartzCore'
   end
 
   s.subspec 'SDWebImage' do |ss|
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     ps.ios.deployment_target = '10.0'
     ps.tvos.deployment_target = '10.10'
     ps.dependency      'AXPhotoViewer/Core'
-    ps.dependency      'PINRemoteImage', '3.0.0-beta.9'
+    ps.dependency      'PINRemoteImage', '~> 3.0'
     ps.source_files  = 'Source/Integrations/PINRemoteImageIntegration.swift'
   end
 
