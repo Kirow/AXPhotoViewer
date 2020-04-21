@@ -1,36 +1,32 @@
 PODS:
-  - AXPhotoViewer/Core (1.7.1-discogs.1):
-    - AXStateButton (>= 1.1.3)
-    - FLAnimatedImage (>= 1.0.0)
-    - FLAnimatedImage-tvOS (>= 1.0.16)
-  - AXPhotoViewer/PINRemoteImage (1.7.1-discogs.1):
+  - AXPhotoViewer/Core (1.7.1-discogs.2):
+    - AXStateButton (~> 1.1)
+    - FLAnimatedImage (~> 1.0)
+    - FLAnimatedImage-tvOS (~> 1.0.16)
+  - AXPhotoViewer/PINRemoteImage (1.7.1-discogs.2):
     - AXPhotoViewer/Core
-    - PINRemoteImage (~> 3.0.0-beta.9)
+    - PINRemoteImage (~> 3.0)
   - AXStateButton (1.1.4)
   - DRPLoadingSpinner (1.3.1):
     - DRPLoadingSpinner/core (= 1.3.1)
   - DRPLoadingSpinner/core (1.3.1)
   - FLAnimatedImage (1.0.12)
-  - PINCache (3.0.1-beta.6):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
-    - PINCache/Core (= 3.0.1-beta.6)
-  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+  - PINCache (3.0.1-beta.8):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.8)
+    - PINCache/Core (= 3.0.1-beta.8)
+  - PINCache/Arc-exception-safe (3.0.1-beta.8):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.6):
-    - PINOperation (~> 1.1.0)
-  - PINOperation (1.1.1)
-  - PINRemoteImage (3.0.0-beta.13):
-    - PINRemoteImage/FLAnimatedImage (= 3.0.0-beta.13)
-    - PINRemoteImage/PINCache (= 3.0.0-beta.13)
-  - PINRemoteImage/Core (3.0.0-beta.13):
+  - PINCache/Core (3.0.1-beta.8):
+    - PINOperation (~> 1.1.1)
+  - PINOperation (1.1.2)
+  - PINRemoteImage (3.0.0):
+    - PINRemoteImage/PINCache (= 3.0.0)
+  - PINRemoteImage/Core (3.0.0):
     - PINOperation
-  - PINRemoteImage/FLAnimatedImage (3.0.0-beta.13):
-    - FLAnimatedImage (>= 1.0)
+  - PINRemoteImage/PINCache (3.0.0):
+    - PINCache (= 3.0.1-beta.8)
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.13):
-    - PINCache (= 3.0.1-beta.6)
-    - PINRemoteImage/Core
-  - Reveal-SDK (13)
+  - Reveal-SDK (24)
 
 DEPENDENCIES:
   - AXPhotoViewer/PINRemoteImage (from `../../AXPhotoViewer.podspec`)
@@ -39,7 +35,7 @@ DEPENDENCIES:
   - Reveal-SDK
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - AXStateButton
     - DRPLoadingSpinner
     - FLAnimatedImage
@@ -53,14 +49,14 @@ EXTERNAL SOURCES:
     :path: "../../AXPhotoViewer.podspec"
 
 SPEC CHECKSUMS:
-  AXPhotoViewer: 15cbd625762927fdc002d75d094c51f6cb28b957
+  AXPhotoViewer: 7d4d25701d81e836c68f20361c729dea5458eccf
   AXStateButton: 6c515a433e37551505046429b5be04c12daa8c07
   DRPLoadingSpinner: 725e530bf4ebe2cc351b1fbc94d24fe8ac3300fd
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
-  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
-  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
-  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
-  Reveal-SDK: ccc2b0f8014965ea448b7534a7c2c8da232b75e8
+  PINCache: 534fd41d358d828dfdf227a0d327f3673a65e20b
+  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
+  PINRemoteImage: e2b89e19fb6e77ffc099f9d9f3b3fe1745e3f9f9
+  Reveal-SDK: 5d7e56b8f018c0a88b3a2c10bf68d598bbd3b071
 
 PODFILE CHECKSUM: 6f4a81711307afc468e5f3e553aeb2549b5e1280
 

@@ -179,7 +179,7 @@
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
-				"${PODS_ROOT}/Reveal-SDK/RevealServer-13/tvOS/RevealServer.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer/tvOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

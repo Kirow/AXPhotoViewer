@@ -1,4 +1,4 @@
-platform :tvos, '10.0'
+platform :tvos, '10.10'
 
 target 'AXPhotoViewerExample' do
 

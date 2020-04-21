@@ -1,36 +1,35 @@
 PODS:
-  - AXPhotoViewer/Core (1.7.1-discogs.1):
-    - AXStateButton (>= 1.1.3)
-    - FLAnimatedImage (>= 1.0.0)
-    - FLAnimatedImage-tvOS (>= 1.0.16)
-  - AXPhotoViewer/PINRemoteImage (1.7.1-discogs.1):
+  - AXPhotoViewer/Core (1.7.1-discogs.2):
+    - AXStateButton (~> 1.1)
+    - FLAnimatedImage (~> 1.0)
+    - FLAnimatedImage-tvOS (~> 1.0.16)
+  - AXPhotoViewer/PINRemoteImage (1.7.1-discogs.2):
     - AXPhotoViewer/Core
-    - PINRemoteImage (~> 3.0.0-beta.9)
+    - PINRemoteImage (~> 3.0)
   - FLAnimatedImage-tvOS (1.0.16)
-  - PINCache (3.0.1-beta.6):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
-    - PINCache/Core (= 3.0.1-beta.6)
-  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+  - PINCache (3.0.1-beta.8):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.8)
+    - PINCache/Core (= 3.0.1-beta.8)
+  - PINCache/Arc-exception-safe (3.0.1-beta.8):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.6):
-    - PINOperation (~> 1.1.0)
-  - PINOperation (1.1.1)
-  - PINRemoteImage (3.0.0-beta.13):
-    - PINRemoteImage/FLAnimatedImage (= 3.0.0-beta.13)
-    - PINRemoteImage/PINCache (= 3.0.0-beta.13)
-  - PINRemoteImage/Core (3.0.0-beta.13):
+  - PINCache/Core (3.0.1-beta.8):
+    - PINOperation (~> 1.1.1)
+  - PINOperation (1.1.2)
+  - PINRemoteImage (3.0.0):
+    - PINRemoteImage/PINCache (= 3.0.0)
+  - PINRemoteImage/Core (3.0.0):
     - PINOperation
-  - PINRemoteImage/PINCache (3.0.0-beta.13):
-    - PINCache (= 3.0.1-beta.6)
+  - PINRemoteImage/PINCache (3.0.0):
+    - PINCache (= 3.0.1-beta.8)
     - PINRemoteImage/Core
-  - Reveal-SDK (13)
+  - Reveal-SDK (24)
 
 DEPENDENCIES:
   - AXPhotoViewer/PINRemoteImage (from `../../AXPhotoViewer.podspec`)
   - Reveal-SDK
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - FLAnimatedImage-tvOS
     - PINCache
     - PINOperation
@@ -42,13 +41,13 @@ EXTERNAL SOURCES:
     :path: "../../AXPhotoViewer.podspec"
 
 SPEC CHECKSUMS:
-  AXPhotoViewer: 15cbd625762927fdc002d75d094c51f6cb28b957
+  AXPhotoViewer: 7d4d25701d81e836c68f20361c729dea5458eccf
   FLAnimatedImage-tvOS: 9848762c9480db5a4334e11782e747fc8fc07baf
-  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
-  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
-  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
-  Reveal-SDK: ccc2b0f8014965ea448b7534a7c2c8da232b75e8
+  PINCache: 534fd41d358d828dfdf227a0d327f3673a65e20b
+  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
+  PINRemoteImage: e2b89e19fb6e77ffc099f9d9f3b3fe1745e3f9f9
+  Reveal-SDK: 5d7e56b8f018c0a88b3a2c10bf68d598bbd3b071
 
-PODFILE CHECKSUM: 687fcbcaff7d8aba8c9a3dace926da7f0e72ff43
+PODFILE CHECKSUM: 490e7b3b6cfaeb1706de47f53f3cf9c6c22f49f4
 
 COCOAPODS: 1.9.1
