@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary         = "An iOS/tvOS photo gallery viewer, useful for viewing a large number of photos."
   s.homepage        = "https://github.com/alexhillc/AXPhotoViewer"
   s.author          = { "Alex Hill" => "alexhill.c@gmail.com" }
-  s.source          = { :git => "https://github.com/alexhillc/AXPhotoViewer.git", :tag => "v#{s.version}" }
+  s.source          = { :git => "https://github.com/OneSman7/AXPhotoViewer.git", :tag => "v#{s.version}" }
 
   s.requires_arc    = true
 
